@@ -1,16 +1,17 @@
 import React from 'react';
 import {Navigation,Logo,Url,Item,Link} from './Style';
+
 const Header = () => {
     return <Navigation>
           <Logo>
-              Logo
+              Fastle
           </Logo>
           <Url>
               <Item>
                   <Link href="">Accueil</Link>
               </Item>
               <Item>
-                  <Link href="">Link 1</Link>
+                  <Link href="/nos-projets">Projects</Link>
               </Item>
               <Item>
                   <Link href="">Link 2</Link>

@@ -13,6 +13,8 @@ export const attachPublicRoutes = (app: any): void => {
 
   app.post('/authentication/guest', authentication.createGuestAccount);
   app.post('/login',authentication.checkUserLogin)
+    app.get('/api/projects', projects.getAll);
+
 };
 
 export const attachPrivateRoutes = (app: any): void => {
@@ -28,6 +30,7 @@ export const attachPrivateRoutes = (app: any): void => {
 
   app.get('/project', projects.getProjectWithUsersAndIssues);
   app.put('/project', projects.update);
+
 
   app.get('/currentUser', users.getCurrentUser);
 };

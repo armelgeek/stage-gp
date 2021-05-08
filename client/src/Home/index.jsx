@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../Partials/Footer';
+import Header from '../Partials/Header';
 import {Banner,CallAction,Title,SubTitle,ImageBanner} from './Style';
 const Home = () => {
     return <div> 

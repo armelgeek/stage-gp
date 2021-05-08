@@ -19,3 +19,8 @@ export const update = catchErrors(async (req, res) => {
   const project = await updateEntity(Project, req.currentUser.projectId, req.body);
   res.respond({ project });
 });
+
+export const getAll = catchErrors(async (req, res) => {
+  const projects = await findEntityOrThrow(Project);
+  res.respond({ projects });
+});
